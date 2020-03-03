@@ -1,6 +1,34 @@
+
+
 // Find the maximum
+const  maxOfTwoNumbers = (a,b) => {
+  if (a>b){
+    return a;
+  }else if (b>a){
+    return b;
+  }else{
+    return a;
+  }
+}
+
+
+
 
 // Finding Longest Word
+
+function findLongestWord(list) {
+  let longest=list[0];
+  for (i=0; i<list.length; i++){
+    
+      if (list[i].length > longest.length){
+        longest = list[i].length;
+      }
+  }
+    return longest;
+  }
+
+  console.log(findLongestWord(words));
+
 let words = [
   'mystery',
   'brother',
@@ -11,19 +39,59 @@ let words = [
   'crackpot'
 ];
 
+
+
     
-
-
-console.log(findLongestWord(words));
 // Calculating a Sum
+
+function sumArray(Array){
+  let ragac = 0;
+  for (i=0; i<Array.length; i++){
+    ragac = ragac + Array[i];
+  }
+  return ragac;
+}
+
+console.log(sumArray(numbers));
 
 let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
+
+
+
+
 // Calculate the Average
+
+function averageNumbers(Array){
+  let ragac = 0;
+  for (i=0; i<Array.length; i++){
+    ragac = ragac + Array[i];
+  }
+  return ragac / Array.length ;
+}
+
+console.log(averageNumbers(numbersAvg));
 
 let numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
+
+
+
+
 // Array of Strings
+
+function averageWordLength(Array){
+  let ragac = 0;
+  for (i=0; i<Array.length; i++){
+
+    ragac = ragac + Array[i].length;
+
+  }
+  return ragac / Array.length ;
+}
+
+console.log(averageWordLength(numbersArr));
+
 let wordsArr = [
   'seat',
   'correspond',
@@ -37,7 +105,27 @@ let wordsArr = [
   'palace'
 ];
 
+
+
+
 // Unique Arrays
+
+function unique(Array){
+    return self.indexOf(i) === {
+    }
+}
+  return single;
+
+//   function onlyUnique(value, index, self) { 
+//     return self.indexOf(value) === index;
+// }
+
+// //usage example:
+// var a = ['a', 1, 'a', 2, '1'];
+// var unique = a.filter( onlyUnique ); // returns ['a', 1, 2, '1']
+
+
+
 let wordsUnique = [
   'crab',
   'poison',
@@ -51,6 +139,12 @@ let wordsUnique = [
   'simple',
   'bring'
 ];
+
+
+
+
+
+
 
 // Finding Elements
 let wordsFind = [
