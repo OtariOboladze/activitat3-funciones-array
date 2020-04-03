@@ -57,6 +57,7 @@ Define una función `maxOfTwoNumbers` que tome dos números como argumentos y de
 
 ### 2. Encuentra la palabra más larga
 
+
 Escribe una función `findLongestWord` que tome un array de palabras y devuelva la más larga. Si hay 2 con la misma longitud, debería devolver la primera. 
 
 
