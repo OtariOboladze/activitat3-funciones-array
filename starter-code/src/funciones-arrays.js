@@ -145,46 +145,63 @@ let words = [
       "poison",
       "communion",
       "simple",
-      "bring"
+      "bring",
 ];
 
 // ################################### 6. Busca elementos
 
 // Escribe una función `doesWordExist` que reciba un array de palabras como argumento y una palabra para buscar dentro del array. Devuelve `true` si existe, sino devuelve `false`. **No** utilices `indexOf` en este caso.
 
-// **Código de partida**
+function doesWordExist(array, palabra) {
+      var x = 0;
+      for (var i = 0; i < array.length; i++) {
+            if (palabra == array[i]) {
+                  x = palabra;
+            }
+      }
+      if (x == palabra) {
+            return true;
+      } else {
+            return false;
+      }
+}
 
-// ```javascript
-// let words = [
-//   'machine',
-//   'subset',
-//   'trouble',
-//   'starting',
-//   'matter',
-//   'eating',
-//   'truth',
-//   'disobedience'
-// ];
-// ```
+let words = [
+      "machine",
+      "subset",
+      "trouble",
+      "starting",
+      "matter",
+      "eating",
+      "truth",
+      "disobedience",
+];
 
 // ################################### 7. Cuenta repeticiones
 
 // Escribe una función `howManyTimes` que tome un array de palabras como argumento y una palabra para buscar. La función devolverá el número de veces que una palabra aparece en el array.
 
-// **Código de partida**
+function doesWordExist(array, palabra) {
+      var x = [];
+      for (var i = 0; i < array.length; i++) {
+            if (palabra == array[i]) {
+                  // let y = palabra;
+                  x.push(palabra);
+            }
+      }
+      return x.length;
+}
 
-// ```javascript
-// let words = [
-//   'machine',
-//   'matter',
-//   'subset',
-//   'trouble',
-//   'starting',
-//   'matter',
-//   'eating',
-//   'matter',
-//   'truth',
-//   'disobedience'
-//   'matter'
-// ];
-// ```
+let words = [
+      "machine",
+      "matter",
+      "subset",
+      "trouble",
+      "starting",
+      "matter",
+      "eating",
+      "matter",
+      "truth",
+      "disobedience",
+      "matter",
+];
